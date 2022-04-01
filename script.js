@@ -5,7 +5,7 @@ const hoursEl = document.getElementById('hours');
 const minutesEl = document.getElementById('minutes');
 const secondsEl = document.getElementById('seconds');
 
-const newYearEve = '1 Jan 2022';
+let newYearEve = `1 Jan ${new Date().getFullYear() + 1}`;
 
 function countdown() {
   const newYearDate = new Date(newYearEve);
